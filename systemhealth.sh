@@ -9,7 +9,7 @@ freeram=$(free)
 totaluptime=$(uptime)
 systemdetails=$(uname -a)
 echo "Your system details : $systemdetails"
-echo "Total updtime: $totalupdatime"
+echo "Total updtime: $totaluptime"
 echo "cpu count : $cpuc"
 echo "Ram size : $freeram"
 
