@@ -39,10 +39,22 @@ read temp
 
 echo "Value of Enter : $temp"
 
-if [-z "$temp"]; then
-echo "Thank you for accpeting"
-else 
+#if [-z "$temp"]; then
+#echo "Thank you for accpeting"
+#else 
 echo "The terms are not accepted qutting" 
+#fi
+
+echo "Where you want to create your folder" 
+read -r fold_loc
+
+mkdir $fold_loc
+
+if [[ $? -eq 0 ]]; then
+	echo "Folder created"
+else 
+	echo "unable to create the folder"
 fi
+
 
 
